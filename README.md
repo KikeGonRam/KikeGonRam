@@ -7,7 +7,7 @@
 <!-- ── CAPSULE RENDER BANNER ── -->
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=600&lines=❰+Luis+González+Ramírez+❱;Software+Developer+%40+Bausen;Full-Stack+Engineer;Next.js+%2B+Spring+Boot;UTVT+·+Ing.+Software)](https://kikegonram.github.io)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=600&lines=❰+Luis+González+Ramírez+❱;Software+Developer;Next.js+%2B+Spring+Boot;UTVT)](https://kikegonram.github.io)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:030810,50:00d4ff,100:00ff9d&height=120&section=header&text=&animation=fadeIn" width="100%"/>
 
@@ -18,13 +18,13 @@
 <!-- ── NEOFETCH TERMINAL ── -->
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  luis@bausen:~$ neofetch                                 │
+│  luis@dev:~$ neofetch                                    │
 ├─────────────────┬────────────────────────────────────────┤
-│                 │  luis@bausen                           │
+│                 │  luis@dev                              │
 │   ██████████   │  ─────────────────────────────────     │
 │   ██      ██   │  OS       : Software Developer         │
-│   ██  ██  ██   │  Company  : Bausen · Infra Digital     │
-│   ██      ██   │  Degree   : Ing. Desarrollo y Gestión  │
+│   ██  ██  ██   │  University: UTVT                      │
+│   ██      ██   │  Location : Toluca, México             │
 │   ██████████   │  Shell    : bash · zsh · PowerShell    │
 │                 │  Terminal : iTerm2 · WSL · GNOME       │
 │                 │  Stack    : Java · Next.js · MySQL     │
@@ -44,14 +44,12 @@
 
 </div>
 
-Soy **Luis Enrique González Ramírez**, desarrollador Full-Stack con título de T.S.U. y actualmente cursando **Ingeniería en Desarrollo y Gestión de Software** en la UTVT. Trabajo en **[Bausen](https://bausen.mx)** donde construyo y mantengo plataformas empresariales reales en producción.
+Soy **Luis Enrique González Ramírez**, desarrollador de software con título de T.S.U. en la UTVT.
 
-- 🏢 **Actualmente:** Software Developer @ Bausen · Infraestructura Digital
-- 🎓 **Educación:** Ing. Desarrollo y Gestión de Software · UTVT IDGS-84
-- 🚀 **Proyectos live:** [bausen.mx/login](https://bausen.mx/login) · [Portal Corporativo](https://bausen.mx/login-portal/login)
-- 🌐 **Portfolio:** [kikegonram.github.io](https://kikegonram.github.io)
-- 💬 **Quote:** *"El mejor código es el que resuelve problemas reales y funciona en producción."*
-- 📍 **Location:** Toluca, México
+- <img src="https://img.icons8.com/color/16/graduation-cap.png"/> **Educación:** UTVT
+- <img src="https://img.icons8.com/color/16/internet.png"/> **Portfolio:** [kikegonram.github.io](https://kikegonram.github.io)
+- <img src="https://img.icons8.com/color/16/chat.png"/> **Quote:** *"El mejor código es el que resuelve problemas reales y funciona en producción."*
+- <img src="https://img.icons8.com/color/16/marker.png"/> **Location:** Toluca, México
 
 ---
 
@@ -120,36 +118,6 @@ Soy **Luis Enrique González Ramírez**, desarrollador Full-Stack con título de
 
 ---
 
-<!-- ── PROYECTOS EN PRODUCCIÓN ── -->
-<div align="center">
-
-### `$ git log --oneline --all --graph`
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-**🟢 [Plataforma BECHAPRA](https://bausen.mx/login)** · `LIVE`
-
-Sistema de gestión de pagos institucional con autenticación segura, control de roles y panel administrativo. Desplegado en producción en bausen.mx.
-
-`Next.js` `TypeScript` `TLS` `Auth` `Enterprise`
-
-</td>
-<td width="50%">
-
-**🟢 [Portal Corporativo Bausen](https://bausen.mx/login-portal/login)** · `LIVE`
-
-Nexo central de gestión financiera con autenticación de grado bancario, TLS v2.5 y acceso centralizado corporativo.
-
-`Portal Corp.` `TLS v2.5` `Seguridad` `Enterprise`
-
-</td>
-</tr>
-</table>
-
 ---
 
 <!-- ── REPOS DESTACADOS ── -->
@@ -207,9 +175,8 @@ Nexo central de gestión financiera con autenticación de grado bancario, TLS v2
 
 </div>
 
-| 🎓 Grado | 🏫 Institución | 📅 Período | 🏷️ Estado |
+| Grado | Institución | Período | Estado |
 |---|---|---|---|
-| **Ingeniería en Desarrollo y Gestión de Software** | UTVT | Sep 2025 — Hoy | `● En curso` |
 | **T.S.U. Desarrollo de Software Multiplataforma** | UTVT · IDGS-84 | 2022 — Ago 2025 | `✓ Titulado` |
 
 ---
@@ -223,8 +190,6 @@ Nexo central de gestión financiera con autenticación de grado bancario, TLS v2
 [![Email](https://img.shields.io/badge/Email-kikeramirez%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:kikeramirez@gmail.com)
 [![Instagram](https://img.shields.io/badge/Instagram-%40kike__gonzalez__16-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/kike_gonzalez_16)
 [![Facebook](https://img.shields.io/badge/Facebook-Kike_Gonzalez-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://facebook.com/kike160418)
-[![Bausen](https://img.shields.io/badge/Work-bausen.mx-00d4ff?style=flat-square&logo=googlechrome&logoColor=white)](https://bausen.mx)
-
 </div>
 
 ---
@@ -237,6 +202,6 @@ Nexo central de gestión financiera con autenticación de grado bancario, TLS v2
 
 ![Profile Views](https://komarev.com/ghpvc/?username=KikeGonRam&color=00d4ff&style=flat-square&label=Profile+Views)
 
-*`❰LGR❱ · Luis Enrique González Ramírez · Bausen Dev · UTVT IDGS-84`*
+*`❰LGR❱ · Luis Enrique González Ramírez · UTVT IDGS-84`*
 
 </div>
