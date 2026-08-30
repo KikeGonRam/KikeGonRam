@@ -31,6 +31,7 @@ Desarrollador de software (T.S.U. en Desarrollo de Software Multiplataforma, UTV
 ## Contacto
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-kikegonram.github.io-informational?style=flat-square)](https://kikegonram.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-luisgonzalezramirez--dev-informational?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/luisgonzalezramirez-dev)
 [![Email](https://img.shields.io/badge/Email-kikeramirez160418%40gmail.com-informational?style=flat-square)](mailto:kikeramirez160418@gmail.com)
 [![Instagram](https://img.shields.io/badge/Instagram-%40kike__gonzalez__16-informational?style=flat-square)](https://instagram.com/kike_gonzalez_16)
 [![Facebook](https://img.shields.io/badge/Facebook-Kike_Gonzalez-informational?style=flat-square)](https://facebook.com/kike160418)
