@@ -5,6 +5,7 @@ Desarrollador de software (T.S.U. en Desarrollo de Software Multiplataforma, UTV
 - 🎓 **Educación:** T.S.U. Desarrollo de Software Multiplataforma — UTVT
 - 🌐 **Portfolio:** [kikegonram.github.io](https://kikegonram.github.io)
 - 📍 **Ubicación:** Toluca, México
+- 💼 **Disponible para:** freelance y nuevos proyectos
 
 ## Stack
 
