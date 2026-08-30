@@ -1,6 +1,6 @@
 # Hola, soy Luis Enrique González Ramírez 👋
 
-Desarrollador de software (T.S.U. en Desarrollo de Software Multiplataforma, UTVT) enfocado en construir aplicaciones full-stack con Java/Spring Boot y Next.js. Radico en Toluca, México.
+Desarrollador de software (T.S.U. en Desarrollo de Software Multiplataforma, UTVT) enfocado en construir aplicaciones full-stack con Java/Spring Boot, Next.js y Laravel, además de sistemas con LLMs locales (RAG + Ollama). Radico en Toluca, México.
 
 - 🎓 **Educación:** T.S.U. Desarrollo de Software Multiplataforma — UTVT
 - 🌐 **Portfolio:** [kikegonram.github.io](https://kikegonram.github.io)
@@ -19,10 +19,13 @@ Desarrollador de software (T.S.U. en Desarrollo de Software Multiplataforma, UTV
 
 **Testing & Seguridad:** JWT · PHPUnit · ESLint · CVE Scanning
 
+**IA / Data:** RAG · Ollama · ChromaDB · PySpark
+
 ## Proyectos destacados
 
 - [KikeGonRam.github.io](https://github.com/KikeGonRam/KikeGonRam.github.io) — portafolio personal
 - [barber (UrbanBlade)](https://github.com/KikeGonRam/barber) — plataforma para barberías: Laravel + MongoDB + Redis + Stripe
+- [RAG](https://github.com/KikeGonRam/RAG) — pipeline RAG 100% local: FastAPI + ChromaDB + Ollama
 - [vulncore](https://github.com/KikeGonRam/vulncore) — escáner de vulnerabilidades (Rust + Go)
 - [dbmonitor](https://github.com/KikeGonRam/dbmonitor)
 - [evaluacion-docente-api](https://github.com/KikeGonRam/evaluacion-docente-api)
