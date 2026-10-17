@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title">
+<title id="title">Luis Enrique — Ideas claras. Código con carácter.</title>
+<rect width="1200" height="400" rx="20" fill="#05070B"/>
+<path d="M860 0h340v400H700z" fill="#0A1428"/><path d="M1030 0h170v400H870z" fill="#102653"/><path d="M1178 0h22v400h-182z" fill="#1769FF"/>
+<rect x="60" y="55" width="38" height="5" fill="#287BFF"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="112" y="63" fill="#91A0B8" font-size="15" letter-spacing="4">KIKEGONRAM / SOFTWARE DEVELOPER</text>
+<text x="55" y="165" fill="#F5F7FC" font-size="76" font-weight="900" letter-spacing="-3">LUIS ENRIQUE.</text>
+<text x="60" y="222" fill="#3986FF" font-size="36" font-weight="700">Ideas claras. Código con carácter.</text>
+<text x="62" y="278" fill="#A7B3C8" font-size="19">WEB / MOBILE / LOCAL AI</text>
+<path d="M60 313h665" stroke="#263248"/>
+<text x="62" y="351" fill="#A7B3C8" font-size="15" letter-spacing="2">TOLUCA, MÉXICO</text>
+<text x="445" y="351" fill="#D9E7FF" font-size="15">DE LA IDEA AL DESPLIEGUE ↗</text>
+</g></svg>
