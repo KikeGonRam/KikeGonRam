@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/terminal-header.svg" width="100%" alt="kikegonram@github — terminal viva: ideas claras. código con carácter. Con la mascota Byte." />
+  <img src="assets/terminal.svg" width="100%" alt="kikegonram@github — terminal viva: ideas claras. código con carácter. Con la mascota Byte." />
 </p>
 
 ![02 / Proyectos con intención. UrbanBlade: frontend web frontend_Urbanblade, backend API barber y sitio urbanblade.com.mx. RAG local: Python, FastAPI, ChromaDB y Ollama. vulncore: escáner Linux con Rust, Go y consultas OSV/NVD.](assets/projects.svg)
