@@ -1,93 +1,159 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="Consolas, ui-monospace, SFMono-Regular, Menlo, monospace" role="img" aria-labelledby="title">
+  <title id="title">kikegonram@github — terminal viva: ideas claras. código con carácter.</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#101827"/>
+      <stop offset="0%" stop-color="#080B12"/>
+      <stop offset="100%" stop-color="#0E1626"/>
     </linearGradient>
     <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#1769FF"/>
-      <stop offset="1" stop-color="#39d0d8"/>
+      <stop offset="0%" stop-color="#1769FF"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <clipPath id="win"><rect x="40" y="40" width="720" height="340" rx="12"/></clipPath>
   </defs>
 
-  <rect width="800" height="420" fill="url(#bg)"/>
+  <style>
+    @keyframes blink { 0%, 40%, 46%, 100% { transform: scaleY(1); } 43% { transform: scaleY(0.08); } }
+    @keyframes wave { 0%, 60%, 100% { transform: rotate(0deg); } 68%, 84% { transform: rotate(-18deg); } 76%, 92% { transform: rotate(14deg); } }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes cursorPulse { 0%, 45% { opacity: 1; } 55%, 100% { opacity: 0.15; } }
+    @keyframes neonDraw { from { width: 0; } to { width: 958px; } }
+    
+    .eyes { transform-origin: 818px 186px; animation: blink 5.5s linear infinite; }
+    .paw { transform-origin: 882px 235px; animation: wave 7s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+    .bot { animation: bob 4.5s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+    .cursor { animation: cursorPulse 1.2s linear infinite; }
+    .neon-line { animation: neonDraw 3s ease-out forwards; }
+    
+    @media(prefers-reduced-motion: reduce) {
+      .eyes, .paw, .bot, .cursor, .neon-line { animation: none; }
+      .neon-line { width: 958px; }
+    }
+  </style>
 
-  <!-- scanline decor -->
-  <g opacity="0.06">
-    <line x1="0" y1="100" x2="800" y2="100" stroke="#39d0d8"/>
-    <line x1="0" y1="200" x2="800" y2="200" stroke="#39d0d8"/>
-    <line x1="0" y1="300" x2="800" y2="300" stroke="#39d0d8"/>
-    <line x1="0" y1="400" x2="800" y2="400" stroke="#39d0d8"/>
+  <!-- Ventana Terminal -->
+  <rect x="1" y="1" width="998" height="418" rx="16" fill="url(#bg)" stroke="#263248"/>
+  <path d="M17 1h966q16 0 16 16v37H1V17Q1 1 17 1" fill="#151A24"/>
+  <path d="M1 54h998" stroke="#263248"/>
+
+  <!-- Scanlines sutiles decorativas -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="1000" y2="100" stroke="#38BDF8"/>
+    <line x1="0" y1="170" x2="1000" y2="170" stroke="#38BDF8"/>
+    <line x1="0" y1="240" x2="1000" y2="240" stroke="#38BDF8"/>
+    <line x1="0" y1="310" x2="1000" y2="310" stroke="#38BDF8"/>
+    <line x1="0" y1="380" x2="1000" y2="380" stroke="#38BDF8"/>
   </g>
 
-  <!-- terminal window -->
-  <rect x="40" y="40" width="720" height="340" rx="12" fill="#0b0f14" stroke="#1f2937" stroke-width="1.5"/>
-  <rect x="40" y="40" width="720" height="36" rx="12" fill="#161d27"/>
-  <rect x="40" y="66" width="720" height="10" fill="#161d27"/>
-  <circle cx="64" cy="58" r="6" fill="#ff5f57"/>
-  <circle cx="86" cy="58" r="6" fill="#febc2e"/>
-  <circle cx="108" cy="58" r="6" fill="#28c840"/>
-  <text x="400" y="62" text-anchor="middle" fill="#4b5563" font-size="13">kikegonram@github: ~</text>
+  <!-- Botones Terminal -->
+  <circle cx="27" cy="27" r="6" fill="#FF6058"/>
+  <circle cx="49" cy="27" r="6" fill="#FEBC2E"/>
+  <circle cx="71" cy="27" r="6" fill="#28C840"/>
 
-  <g clip-path="url(#win)" font-size="16">
+  <text x="113" y="33" fill="#91A0B8" font-size="14">kikegonram@github: ~ (terminal viva)</text>
+  <text x="915" y="33" fill="#38BDF8" font-size="13">zsh:main</text>
 
-    <!-- L1: prompt whoami -->
-    <text x="64" y="120" fill="#39d0d8" opacity="0">
-      <set attributeName="opacity" to="1" begin="0.5s"/>
-      $ whoami
-    </text>
-    <!-- response -->
-    <text x="64" y="148" fill="#e6edf3" font-weight="bold" opacity="0">
-      <set attributeName="opacity" to="1" begin="1.6s"/>
-      luis-enrique · kikegonram
-    </text>
-    <text x="64" y="172" fill="#8b949e" opacity="0">
-      <set attributeName="opacity" to="1" begin="2.1s"/>
-      dev fullstack — web · móvil · IA local
-    </text>
+  <!-- SECCIÓN IZQUIERDA: LÍNEAS DE COMANDOS VIVOS -->
+  <!-- L1: prompt whoami -->
+  <g font-size="15">
+    <!-- Command 1 -->
+    <text x="36" y="98" fill="#38BDF8" font-weight="700">➜  ~</text>
+    <text x="80" y="98" fill="#67E8F9">$ whoami</text>
 
-    <!-- L2 -->
-    <text x="64" y="216" fill="#39d0d8" opacity="0">
-      <set attributeName="opacity" to="1" begin="3.0s"/>
-      $ cat filosofia.txt
-    </text>
-    <text x="64" y="244" fill="url(#neon)" font-weight="bold" filter="url(#glow)" opacity="0">
-      <set attributeName="opacity" to="1" begin="4.1s"/>
-      ideas claras. código con carácter.
-    </text>
+    <!-- Response 1 -->
+    <text x="36" y="126" fill="#F8FAFC" font-size="17" font-weight="700">Luis Enrique González Ramírez</text>
+    <text x="36" y="150" fill="#94A3B8" font-size="14">Desarrollador Full-stack · Web · Móvil · IA local · Toluca, México</text>
+    <text x="36" y="172" fill="#64748B" font-size="13">T.S.U. Desarrollo de Software Multiplataforma · UTVT</text>
 
-    <!-- L3 -->
-    <text x="64" y="288" fill="#39d0d8" opacity="0">
-      <set attributeName="opacity" to="1" begin="5.0s"/>
-      $ ls ~/proyectos --destacados
-    </text>
-    <text x="80" y="316" fill="#1769FF" opacity="0">
-      <set attributeName="opacity" to="1" begin="6.2s"/>
-      urbanblade/   rag-local/   vulncore/
-    </text>
+    <!-- Command 2: filosofia -->
+    <text x="36" y="210" fill="#38BDF8" font-weight="700">➜  ~</text>
+    <text x="80" y="210" fill="#67E8F9">$ cat filosofia.txt</text>
 
-    <!-- L4 -->
-    <text x="64" y="356" fill="#39d0d8" opacity="0">
-      <set attributeName="opacity" to="1" begin="7.2s"/>
-      $ ./hablemos --ahora
-    </text>
+    <!-- Response 2 -->
+    <text x="36" y="238" fill="url(#neon)" font-size="18" font-weight="800" filter="url(#glow)">"Ideas claras. Código con carácter."</text>
 
-    <!-- cursor -->
-    <rect x="215" y="343" width="9" height="18" fill="#39d0d8">
-      <animate attributeName="x" values="215;64;64" keyTimes="0;0.55;1" dur="7.2s" begin="0s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="1s" begin="7.4s" repeatCount="indefinite"/>
-      <set attributeName="opacity" to="0" begin="0s"/>
-      <set attributeName="opacity" to="1" begin="0.4s"/>
-    </rect>
+    <!-- Command 3: proyectos -->
+    <text x="36" y="278" fill="#38BDF8" font-weight="700">➜  ~</text>
+    <text x="80" y="278" fill="#67E8F9">$ ls ~/proyectos --showcase</text>
+
+    <!-- Response 3 -->
+    <text x="36" y="306" fill="#22D3EE" font-size="14" font-weight="700">01 urbanblade/</text>
+    <text x="175" y="306" fill="#94A3B8" font-size="13">(prod · barber)</text>
+
+    <text x="300" y="306" fill="#A855F7" font-size="14" font-weight="700">02 rag-local/</text>
+    <text x="420" y="306" fill="#94A3B8" font-size="13">(local AI)</text>
+
+    <text x="510" y="306" fill="#F97316" font-size="14" font-weight="700">03 vulncore/</text>
+    <text x="620" y="306" fill="#94A3B8" font-size="13">(sec/cli)</text>
+
+    <!-- Command 4: hablemos -->
+    <text x="36" y="348" fill="#38BDF8" font-weight="700">➜  ~</text>
+    <text x="80" y="348" fill="#67E8F9">$ ./hablemos --sobre-tu-idea</text>
+    <rect x="335" y="333" width="9" height="18" fill="#38BDF8" class="cursor"/>
+
+    <text x="36" y="376" fill="#64748B" font-size="12.5"># Explora los proyectos interactivos abajo o contáctame para colaborar.</text>
   </g>
 
-  <!-- bottom neon line -->
-  <rect x="40" y="396" width="0" height="2" fill="url(#neon)">
-    <animate attributeName="width" from="0" to="720" dur="7.5s" fill="freeze"/>
-  </rect>
+  <!-- SECCIÓN DERECHA: LA MASCOTA BYTE INTEGRADA -->
+  <!-- Separador vertical sutil -->
+  <line x1="710" y1="55" x2="710" y2="395" stroke="#1E293B" stroke-dasharray="3 3"/>
+
+  <!-- Mascota Byte -->
+  <g transform="translate(15, 25)">
+    <!-- Sombra base -->
+    <ellipse cx="818" cy="305" rx="85" ry="9" fill="#04070E"/>
+
+    <g class="bot">
+      <!-- Cable/Cola -->
+      <path d="M748 260q-60-18-42-62q11-24 28-8" stroke="#3986FF" stroke-width="12" fill="none" stroke-linecap="round"/>
+      
+      <!-- Cuerpo -->
+      <rect x="768" y="230" width="102" height="62" rx="25" fill="#1769FF"/>
+      <rect x="785" y="243" width="65" height="38" rx="15" fill="#102653"/>
+
+      <!-- Orejas -->
+      <path d="M758 174l3-54 41 32m31 0 43-32 3 56" fill="#1769FF" stroke="#6DA3FF" stroke-width="2.5"/>
+      <path d="M771 154v-14l14 13m64 0 16-13v15" fill="#22D3EE"/>
+
+      <!-- Cabeza -->
+      <rect x="749" y="152" width="140" height="88" rx="30" fill="#1769FF" stroke="#6DA3FF" stroke-width="2.5"/>
+      <rect x="761" y="167" width="116" height="56" rx="20" fill="#05070B"/>
+
+      <!-- Ojos animados con parpadeo -->
+      <g class="eyes">
+        <path d="M777 193q9-14 18 0m47 0q9-14 18 0" stroke="#67E8F9" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Sonrisa -->
+      <path d="M811 205q8 9 16 0" stroke="#67E8F9" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+      <!-- Mejillas sonrojadas -->
+      <circle cx="773" cy="207" r="3.5" fill="#A78BFA"/>
+      <circle cx="865" cy="207" r="3.5" fill="#A78BFA"/>
+
+      <!-- Patas base -->
+      <path d="M779 285v11m78-11v11" stroke="#6DA3FF" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Pata saludando animada -->
+      <g class="paw">
+        <path d="M867 248l26-19" stroke="#1769FF" stroke-width="15" stroke-linecap="round"/>
+        <circle cx="896" cy="222" r="14" fill="#3986FF"/>
+        <circle cx="896" cy="222" r="4.5" fill="#67E8F9"/>
+      </g>
+    </g>
+
+    <!-- Texto di hola -->
+    <text x="765" y="342" font-size="14" fill="#67E8F9" font-weight="600">~/byte — di hola</text>
+    <text x="760" y="360" font-size="11.5" fill="#64748B">guardián del código</text>
+  </g>
+
+  <!-- Línea de neón inferior animada -->
+  <rect x="21" y="408" width="0" height="2.5" rx="1.25" fill="url(#neon)" class="neon-line"/>
 </svg>

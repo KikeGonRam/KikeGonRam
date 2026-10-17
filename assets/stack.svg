@@ -16,8 +16,10 @@
 .tech-pill:hover { transform: translateY(-2.5px); }
 .tech-pill:hover rect { fill: #132238 !important; stroke: #38BDF8 !important; filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45)); }
 .tech-pill:hover .tag-text { fill: #FFFFFF !important; }
+@keyframes neonExpand { from { width: 0; } to { width: 958px; } }
+.neon-line { animation: neonExpand 3s ease-out forwards; }
 
-@media(prefers-reduced-motion:reduce){ .pulse, .blink, .tech-pill { animation: none; transition: none; } }
+@media(prefers-reduced-motion:reduce){ .pulse, .blink, .tech-pill, .neon-line { animation: none; transition: none; } .neon-line { width: 958px; } }
 </style>
 <defs>
   <linearGradient id="learnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -28,12 +30,26 @@
     <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.35"/>
     <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
   </linearGradient>
+  <linearGradient id="sneon" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1769FF"/>
+    <stop offset="50%" stop-color="#38BDF8"/>
+    <stop offset="100%" stop-color="#22D3EE"/>
+  </linearGradient>
 </defs>
 
 <!-- Ventana Terminal -->
 <rect x="1" y="1" width="998" height="688" rx="16" fill="#080B12" stroke="#263248"/>
 <path d="M17 1h966q16 0 16 16v37H1V17Q1 1 17 1" fill="#151A24"/>
 <path d="M1 54h998" stroke="#263248"/>
+
+<!-- Scanlines sutiles decorativas -->
+<g opacity="0.04">
+  <line x1="0" y1="120" x2="1000" y2="120" stroke="#38BDF8"/>
+  <line x1="0" y1="240" x2="1000" y2="240" stroke="#38BDF8"/>
+  <line x1="0" y1="360" x2="1000" y2="360" stroke="#38BDF8"/>
+  <line x1="0" y1="480" x2="1000" y2="480" stroke="#38BDF8"/>
+  <line x1="0" y1="600" x2="1000" y2="600" stroke="#38BDF8"/>
+</g>
 
 <!-- Botones Terminal -->
 <circle cx="27" cy="27" r="6" fill="#FF6058"/>
@@ -46,7 +62,7 @@
 <!-- Comando CLI -->
 <text x="32" y="93" class="code-text" fill="#67E8F9">kike@dev:~$</text>
 <text x="155" y="93" class="code-text" fill="#F8FAFC">cat ~/.config/stack.conf</text>
-<rect x="390" y="78" width="9" height="18" fill="#67E8F9" class="blink"/>
+<rect x="390" y="78" width="9" height="18" fill="#38BDF8" class="blink"/>
 <!-- Row [backend] -->
 <g transform="translate(0, 135)">
   <text x="32" y="20" class="cat-text" fill="#3986FF">[backend]</text>
@@ -357,6 +373,9 @@
 
 <!-- Separador y Footer -->
 <path d="M32 603h936" stroke="#1E293B" stroke-dasharray="4 4"/>
-<text x="32" y="664" class="comment-text"># Click en cada tecnología para consultar su documentación oficial · ⚡ Cloud &amp; Mobile activo</text>
-<text x="890" y="664" class="comment-text" fill="#38BDF8">[ 26 tools ]</text>
+<text x="32" y="662" class="comment-text"># Click en cada tecnología para consultar su documentación oficial · ⚡ Cloud &amp; Mobile activo</text>
+<text x="890" y="662" class="comment-text" fill="#38BDF8">[ 26 tools ]</text>
+
+<!-- Línea de neón inferior animada -->
+<rect x="21" y="682" width="0" height="2.5" rx="1.25" fill="url(#sneon)" class="neon-line"/>
 </svg>

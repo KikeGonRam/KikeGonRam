@@ -3,16 +3,14 @@
 </p>
 
 <p align="center">
-  <img src="assets/terminal-header.svg" width="100%" alt="kikegonram@github — terminal viva: ideas claras. código con carácter." />
-</p>
-
-<p align="center">
   <a href="https://kikegonram.github.io"><img src="https://img.shields.io/badge/PORTAFOLIO-1769FF?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Ver portafolio" /></a>
   <a href="https://www.linkedin.com/in/luisgonzalezramirez-dev"><img src="https://img.shields.io/badge/LINKEDIN-101827?style=for-the-badge" alt="Conectar en LinkedIn" /></a>
   <a href="mailto:kikeramirez160418@gmail.com"><img src="https://img.shields.io/badge/HABLEMOS-101827?style=for-the-badge&amp;logo=gmail&amp;logoColor=3986FF" alt="Enviar correo" /></a>
 </p>
 
-![01 / Detrás del código. Soy Luis Enrique González Ramírez, desarrollador full-stack en Toluca, México. Construyo aplicaciones web, móviles, APIs y sistemas con IA local. T.S.U. en Desarrollo de Software Multiplataforma por la UTVT.](assets/about.svg)
+<p align="center">
+  <img src="assets/terminal-header.svg" width="100%" alt="kikegonram@github — terminal viva: ideas claras. código con carácter. Con la mascota Byte." />
+</p>
 
 ![02 / Proyectos con intención. UrbanBlade: frontend web frontend_Urbanblade, backend API barber y sitio urbanblade.com.mx. RAG local: Python, FastAPI, ChromaDB y Ollama. vulncore: escáner Linux con Rust, Go y consultas OSV/NVD.](assets/projects.svg)
 
