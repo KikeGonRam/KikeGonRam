@@ -1,11 +1,362 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="505" viewBox="0 0 1000 505" role="img" aria-labelledby="title"><title id="title">03 / Mi caja de herramientas. Backend, frontend, móvil, datos, infraestructura, IA y calidad.</title><style>
-@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-36px,14px)}}
-@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
-@keyframes flow{0%{transform:translateX(0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(250px);opacity:0}}
-@keyframes cursor{0%,45%{opacity:1}55%,100%{opacity:.15}}
-.drift{animation:drift 9s cubic-bezier(.77,0,.175,1) infinite}
-.pulse{animation:pulse 4s cubic-bezier(.77,0,.175,1) infinite}
-.flow{animation:flow 3s linear infinite}
-.cursor{animation:cursor 1.8s linear infinite}
-@media(prefers-reduced-motion:reduce){.drift,.flow{animation:none}.pulse,.cursor{animation:none;opacity:.7}}
-</style><rect width="1000" height="505" rx="16" fill="#05070B"/><g font-family="Arial,Helvetica,sans-serif"><text x="30" y="43" font-size="16" fill="#3986FF" font-weight="700">03 / MI CAJA DE HERRAMIENTAS</text><text x="30" y="102" font-size="40" fill="#F5F7FC" font-weight="700">Del sistema a la pantalla.</text><rect x="30" y="133" width="455" height="104" rx="8" fill="#0B1830"/><rect x="30" y="149" width="3" height="72" rx="1" fill="#3986FF"/><text x="46" y="162" font-size="14" fill="#3986FF" font-weight="700">BACKEND</text><text x="437" y="162" font-size="17" fill="#91A0B8" font-weight="400">01</text><text x="46" y="192" font-size="20" fill="#D9E7FF" font-weight="400">Java · Spring Boot · Laravel</text><text x="46" y="217" font-size="20" fill="#D9E7FF" font-weight="400">Python · FastAPI · Node.js</text><rect x="515" y="133" width="455" height="104" rx="8" fill="#092127"/><rect x="515" y="149" width="3" height="72" rx="1" fill="#22D3EE"/><text x="531" y="162" font-size="14" fill="#3986FF" font-weight="700">FRONTEND + MÓVIL</text><text x="922" y="162" font-size="17" fill="#91A0B8" font-weight="400">02</text><text x="531" y="192" font-size="20" fill="#D9E7FF" font-weight="400">Next.js · React · TypeScript</text><text x="531" y="217" font-size="20" fill="#D9E7FF" font-weight="400">Tailwind CSS · React Native</text><rect x="30" y="253" width="455" height="104" rx="8" fill="#1B1130"/><rect x="30" y="269" width="3" height="72" rx="1" fill="#A78BFA"/><text x="46" y="282" font-size="14" fill="#3986FF" font-weight="700">DATOS</text><text x="437" y="282" font-size="17" fill="#91A0B8" font-weight="400">03</text><text x="46" y="312" font-size="20" fill="#D9E7FF" font-weight="400">MySQL · MongoDB</text><text x="46" y="337" font-size="20" fill="#D9E7FF" font-weight="400">ChromaDB</text><rect x="515" y="253" width="455" height="104" rx="8" fill="#101E32"/><rect x="515" y="269" width="3" height="72" rx="1" fill="#60A5FA"/><text x="531" y="282" font-size="14" fill="#3986FF" font-weight="700">INFRAESTRUCTURA</text><text x="922" y="282" font-size="17" fill="#91A0B8" font-weight="400">04</text><text x="531" y="312" font-size="20" fill="#D9E7FF" font-weight="400">Docker · Git</text><text x="531" y="337" font-size="20" fill="#D9E7FF" font-weight="400">GitHub Actions</text><rect x="30" y="373" width="455" height="104" rx="8" fill="#21122A"/><rect x="30" y="389" width="3" height="72" rx="1" fill="#C084FC"/><text x="46" y="402" font-size="14" fill="#3986FF" font-weight="700">IA + ANÁLISIS</text><text x="437" y="402" font-size="17" fill="#91A0B8" font-weight="400">05</text><text x="46" y="432" font-size="20" fill="#D9E7FF" font-weight="400">RAG · Ollama</text><text x="46" y="457" font-size="20" fill="#D9E7FF" font-weight="400">PySpark</text><rect x="515" y="373" width="455" height="104" rx="8" fill="#0C241F"/><rect x="515" y="389" width="3" height="72" rx="1" fill="#34D399"/><text x="531" y="402" font-size="14" fill="#3986FF" font-weight="700">CALIDAD</text><text x="922" y="402" font-size="17" fill="#91A0B8" font-weight="400">06</text><text x="531" y="432" font-size="20" fill="#D9E7FF" font-weight="400">PHPUnit · ESLint</text><text x="531" y="457" font-size="20" fill="#D9E7FF" font-weight="400">Postman · Swagger</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="690" viewBox="0 0 1000 690" role="img" aria-labelledby="title">
+<title id="title">03 / mi caja de herramientas — stack.conf</title>
+<style>
+@keyframes pulse { 0%, 100% { opacity: 0.35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.15); } }
+@keyframes blink { 0%, 45% { opacity: 1; } 55%, 100% { opacity: 0.2; } }
+.pulse { animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; transform-origin: center; }
+.blink { animation: blink 1.5s linear infinite; }
+.tag-text { font-family: "Consolas", "Courier New", monospace; font-size: 13.5px; font-weight: 500; transition: fill 0.2s ease; }
+.cat-text { font-family: "Consolas", "Courier New", monospace; font-size: 16px; font-weight: 700; }
+.code-text { font-family: "Consolas", "Courier New", monospace; font-size: 18px; }
+.comment-text { font-family: "Consolas", "Courier New", monospace; font-size: 13.5px; fill: #64748B; }
+
+/* Interactividad y Hover Dinámico */
+.tech-pill { cursor: pointer; transition: transform 0.2s ease; }
+.tech-pill rect { transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease; }
+.tech-pill:hover { transform: translateY(-2.5px); }
+.tech-pill:hover rect { fill: #132238 !important; stroke: #38BDF8 !important; filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45)); }
+.tech-pill:hover .tag-text { fill: #FFFFFF !important; }
+
+@media(prefers-reduced-motion:reduce){ .pulse, .blink, .tech-pill { animation: none; transition: none; } }
+</style>
+<defs>
+  <linearGradient id="learnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0284C7" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+  </linearGradient>
+  <linearGradient id="hlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+  </linearGradient>
+</defs>
+
+<!-- Ventana Terminal -->
+<rect x="1" y="1" width="998" height="688" rx="16" fill="#080B12" stroke="#263248"/>
+<path d="M17 1h966q16 0 16 16v37H1V17Q1 1 17 1" fill="#151A24"/>
+<path d="M1 54h998" stroke="#263248"/>
+
+<!-- Botones Terminal -->
+<circle cx="27" cy="27" r="6" fill="#FF6058"/>
+<circle cx="49" cy="27" r="6" fill="#FEBC2E"/>
+<circle cx="71" cy="27" r="6" fill="#28C840"/>
+
+<text x="113" y="33" class="cat-text" fill="#91A0B8" font-weight="400">03 / mi caja de herramientas — stack.conf</text>
+<text x="895" y="33" class="cat-text" fill="#475569" font-weight="400">INTERACTIVE</text>
+
+<!-- Comando CLI -->
+<text x="32" y="93" class="code-text" fill="#67E8F9">kike@dev:~$</text>
+<text x="155" y="93" class="code-text" fill="#F8FAFC">cat ~/.config/stack.conf</text>
+<rect x="390" y="78" width="9" height="18" fill="#67E8F9" class="blink"/>
+<!-- Row [backend] -->
+<g transform="translate(0, 135)">
+  <text x="32" y="20" class="cat-text" fill="#3986FF">[backend]</text>
+  <a xlink:href="https://www.java.com/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="77" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M8 17c3.5 1 7.5.5 10-1-2 1.5-5 2.5-9 2-2-.2-3.5-1-1-1z" fill="#5382A1"/>
+  <path d="M7 14c3 1 6.5.7 9-.5-2.2 1-5 1.8-8 1.2-2-.3-2.5-.7-1-.7z" fill="#EA2D2E"/>
+  <path d="M12 3c-1 2-2 3.5-2 5.5s1.5 3 2 4.5c.5-1.5 1-2.5 1-4.5S13 5 12 3z" fill="#EA2D2E"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#CBD5E1">Java</text>
+  </a>
+  <a xlink:href="https://spring.io/projects/spring-boot" target="_blank" class="tech-pill">    <rect x="302" y="0" width="136" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(310, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1 14.5l-4-4 1.4-1.4L11 13.7l6.6-6.6L19 8.5l-8 8z" fill="#6DB33F"/>
+</svg>
+</g>
+    <text x="330" y="20" class="tag-text" fill="#CBD5E1">Spring Boot</text>
+  </a>
+  <a xlink:href="https://laravel.com/" target="_blank" class="tech-pill">    <rect x="448" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(456, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2l8 4.6v9.2L12 20.4l-8-4.6V6.6L12 2z" stroke="#FF2D20" stroke-width="1.8" fill="none"/>
+  <path d="M12 2v9.2l8-4.6M12 11.2l-8-4.6" stroke="#FF2D20" stroke-width="1.6"/>
+</svg>
+</g>
+    <text x="476" y="20" class="tag-text" fill="#CBD5E1">Laravel</text>
+  </a>
+  <a xlink:href="https://www.python.org/" target="_blank" class="tech-pill">    <rect x="560" y="0" width="94" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(568, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M11.9 2c-3.4 0-3.2 1.5-3.2 1.5l.04 1.55h3.26v.47H6.2S4 5.3 4 8.7c0 3.4 1.9 3.3 1.9 3.3h1.15v-1.6s-.06-1.9 1.9-1.9h3.25s1.84.03 1.84-1.8V4c0-1.8-2.14-2-2.14-2zm-1.8 1.15a.65.65 0 110 1.3.65.65 0 010-1.3z" fill="#3776AB"/>
+  <path d="M12.1 22c3.4 0 3.2-1.5 3.2-1.5l-.04-1.55h-3.26v-.47h5.8s2.2.22 2.2-3.18c0-3.4-1.9-3.3-1.9-3.3h-1.15v1.6s.06 1.9-1.9 1.9h-3.25s-1.84-.03-1.84 1.8V20c0 1.8 2.14 2 2.14 2zm1.8-1.15a.65.65 0 110-1.3.65.65 0 010 1.3z" fill="#FFD438"/>
+</svg>
+</g>
+    <text x="588" y="20" class="tag-text" fill="#CBD5E1">Python</text>
+  </a>
+  <a xlink:href="https://fastapi.tiangolo.com/" target="_blank" class="tech-pill">    <rect x="664" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(672, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" fill="#009688"/>
+  <path d="M13 4l-5 8h4l-1 8 6-9h-4l1-7z" fill="#FFFFFF"/>
+</svg>
+</g>
+    <text x="692" y="20" class="tag-text" fill="#CBD5E1">FastAPI</text>
+  </a>
+  <a xlink:href="https://nodejs.org/" target="_blank" class="tech-pill">    <rect x="776" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(784, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9L12 2z" fill="#339933"/>
+  <path d="M12 6.5v11m4.5-8.5l-9 5" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>
+</g>
+    <text x="804" y="20" class="tag-text" fill="#CBD5E1">Node.js</text>
+  </a>
+</g>
+<!-- Row [mobile] -->
+<g transform="translate(0, 203)">
+  <text x="32" y="20" class="cat-text" fill="#22D3EE">[mobile]</text>
+  <a xlink:href="https://kotlinlang.org/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="94" height="30" rx="7" fill="url(#hlGrad)" stroke="#60A5FA" stroke-width="1.2"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M24 0H0v24h24L12 12 24 0z" fill="url(#kotGrad)"/>
+  <defs>
+    <linearGradient id="kotGrad" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7F52FF"/>
+      <stop offset="0.5" stop-color="#C711E1"/>
+      <stop offset="1" stop-color="#E4485D"/>
+    </linearGradient>
+  </defs>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#93C5FD" font-weight="600">Kotlin</text>
+  </a>
+  <a xlink:href="https://developer.android.com/" target="_blank" class="tech-pill">    <rect x="319" y="0" width="136" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(327, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M24 0H0v24h24L12 12 24 0z" fill="url(#kotGrad)"/>
+  <defs>
+    <linearGradient id="kotGrad" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7F52FF"/>
+      <stop offset="0.5" stop-color="#C711E1"/>
+      <stop offset="1" stop-color="#E4485D"/>
+    </linearGradient>
+  </defs>
+</svg>
+</g>
+    <text x="347" y="20" class="tag-text" fill="#CBD5E1">Android SDK</text>
+  </a>
+  <a xlink:href="https://reactnative.dev/" target="_blank" class="tech-pill">    <rect x="465" y="0" width="144" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(473, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4"/>
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4" transform="rotate(60 12 12)"/>
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4" transform="rotate(120 12 12)"/>
+  <circle cx="12" cy="12" r="1.8" fill="#61DAFB"/>
+</svg>
+</g>
+    <text x="493" y="20" class="tag-text" fill="#CBD5E1">React Native</text>
+  </a>
+</g>
+<!-- Row [frontend] -->
+<g transform="translate(0, 271)">
+  <text x="32" y="20" class="cat-text" fill="#3986FF">[frontend]</text>
+  <a xlink:href="https://nextjs.org/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" fill="#000000" stroke="#FFFFFF" stroke-width="1.5"/>
+  <path d="M8.5 7.5v9M15.5 7.5l-7 9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M15.5 7.5v4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#CBD5E1">Next.js</text>
+  </a>
+  <a xlink:href="https://react.dev/" target="_blank" class="tech-pill">    <rect x="327" y="0" width="86" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(335, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4"/>
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4" transform="rotate(60 12 12)"/>
+  <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.4" transform="rotate(120 12 12)"/>
+  <circle cx="12" cy="12" r="1.8" fill="#61DAFB"/>
+</svg>
+</g>
+    <text x="355" y="20" class="tag-text" fill="#CBD5E1">React</text>
+  </a>
+  <a xlink:href="https://www.typescriptlang.org/" target="_blank" class="tech-pill">    <rect x="423" y="0" width="128" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(431, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <rect x="2" y="2" width="20" height="20" rx="4" fill="#3178C6"/>
+  <path d="M6 10h6m-3 0v8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M17.5 11c-.5-.6-1.2-1-2-1-1.4 0-2.5.9-2.5 2.2 0 2.5 4 1.8 4 3.8 0 1.2-1 2-2.5 2-1 0-1.8-.4-2.5-1.2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
+</g>
+    <text x="451" y="20" class="tag-text" fill="#CBD5E1">TypeScript</text>
+  </a>
+  <a xlink:href="https://tailwindcss.com/" target="_blank" class="tech-pill">    <rect x="561" y="0" width="144" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(569, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M6 10c1.5-2.5 3.5-3 6-1.5 2 1.2 3 1.2 4.5 0 1.5-1.2 2-2.5 1.5-4-.5 2-1.5 3-3.5 2-2-1-3-1-4.5 0-1.5 1-2 2.5-2 3.5zm-4 6c1.5-2.5 3.5-3 6-1.5 2 1.2 3 1.2 4.5 0 1.5-1.2 2-2.5 1.5-4-.5 2-1.5 3-3.5 2-2-1-3-1-4.5 0-1.5 1-2 2.5-2 3.5z" fill="#06B6D4"/>
+</svg>
+</g>
+    <text x="589" y="20" class="tag-text" fill="#CBD5E1">Tailwind CSS</text>
+  </a>
+</g>
+<!-- Row [data] -->
+<g transform="translate(0, 339)">
+  <text x="32" y="20" class="cat-text" fill="#3986FF">[data]</text>
+  <a xlink:href="https://www.postgresql.org/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="128" height="30" rx="7" fill="url(#hlGrad)" stroke="#60A5FA" stroke-width="1.2"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#336791"/>
+  <path d="M12 4a8 8 0 00-8 8c0 1.8.6 3.5 1.6 4.9L9 13v-2H7v-2h4v3l3 2v-3h2v4l3.5 1.5C20.4 15 21 13.6 21 12a8 8 0 00-9-8z" fill="#4169E1"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#93C5FD" font-weight="600">PostgreSQL</text>
+  </a>
+  <a xlink:href="https://www.mysql.com/" target="_blank" class="tech-pill">    <rect x="353" y="0" width="86" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(361, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M4 14c2-4 6-7 11-6 3 1 5 3 6 5-3-1-6-1-9 0-3 1-5 2-8 1z" fill="#00758F"/>
+  <circle cx="16" cy="10" r="1.5" fill="#F29111"/>
+</svg>
+</g>
+    <text x="381" y="20" class="tag-text" fill="#CBD5E1">MySQL</text>
+  </a>
+  <a xlink:href="https://www.mongodb.com/" target="_blank" class="tech-pill">    <rect x="449" y="0" width="102" height="30" rx="7" fill="url(#hlGrad)" stroke="#60A5FA" stroke-width="1.2"/>
+    <g transform="translate(457, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 1.5s-5.5 5.5-5.5 12c0 4.5 3.5 8 5.5 9 2-1 5.5-4.5 5.5-9 0-6.5-5.5-12-5.5-12z" fill="#00ED64"/>
+  <path d="M12 1.5v19.5c2-1 4.5-4 4.5-8.5 0-6.5-4.5-11-4.5-11z" fill="#00684A"/>
+</svg>
+</g>
+    <text x="477" y="20" class="tag-text" fill="#93C5FD" font-weight="600">MongoDB</text>
+  </a>
+  <a xlink:href="https://www.trychroma.com/" target="_blank" class="tech-pill">    <rect x="561" y="0" width="111" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(569, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="5" fill="#38BDF8"/>
+</svg>
+</g>
+    <text x="589" y="20" class="tag-text" fill="#CBD5E1">ChromaDB</text>
+  </a>
+</g>
+<!-- Row [cloud &amp; infra] -->
+<g transform="translate(0, 407)">
+  <text x="32" y="20" class="cat-text" fill="#22D3EE">[cloud &amp; infra]</text>
+  <a xlink:href="https://www.docker.com/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="94" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M23.5 12.5c-.3-.2-1.5-.3-2.3.3-.1-.9-.7-1.7-1.6-2.1l-.6-.3-.4.6c-.6.9-.6 2.1-.2 3.1-.7.4-1.8.4-2.5 0l-.5-.3-.4.5c-.7.9-.7 2.1-.2 3-1.6-.2-6.5-.2-8.6 2.2-.8.9-1.3 2.1-1.3 3.4 0 .4.3.7.7.7h13.5c4.5 0 8.1-3.6 8.1-8.1 0-.7-.3-1.4-.7-2-.3-.5-.7-.8-1.1-.9z" fill="#2496ED"/>
+  <rect x="7" y="11" width="2" height="2" fill="#2496ED"/>
+  <rect x="10" y="11" width="2" height="2" fill="#2496ED"/>
+  <rect x="10" y="8" width="2" height="2" fill="#2496ED"/>
+  <rect x="13" y="11" width="2" height="2" fill="#2496ED"/>
+  <rect x="13" y="8" width="2" height="2" fill="#2496ED"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#CBD5E1">Docker</text>
+  </a>
+  <a xlink:href="https://git-scm.com/" target="_blank" class="tech-pill">    <rect x="319" y="0" width="74" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(327, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M21.6 10.8l-8.4-8.4a1.8 1.8 0 00-2.5 0L8.3 4.8l3.1 3.1a2.1 2.1 0 012.7 2.7l3 3a2.1 2.1 0 11-1.3 1.3l-2.8-2.8v4.2a2.1 2.1 0 11-1.8 0V11a2.1 2.1 0 01-1.2-2.7L6.9 5.2 2.4 9.7a1.8 1.8 0 000 2.5l8.4 8.4a1.8 1.8 0 002.5 0l8.3-8.3a1.8 1.8 0 000-2.5z" fill="#F05032"/>
+</svg>
+</g>
+    <text x="347" y="20" class="tag-text" fill="#CBD5E1">Git</text>
+  </a>
+  <a xlink:href="https://github.com/features/actions" target="_blank" class="tech-pill">    <rect x="403" y="0" width="161" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(411, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" stroke="#2088FF" stroke-width="1.8"/>
+  <path d="M10 8l5 4-5 4V8z" fill="#2088FF"/>
+</svg>
+</g>
+    <text x="431" y="20" class="tag-text" fill="#CBD5E1">GitHub Actions</text>
+  </a>
+  <a xlink:href="https://aws.amazon.com/" target="_blank" class="tech-pill">    <rect x="574" y="0" width="161" height="30" rx="7" fill="url(#learnGrad)" stroke="#38BDF8" stroke-width="1.2"/>
+    <g transform="translate(582, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M16.5 13.5c-.3.4-.8.7-1.4.7-.9 0-1.5-.6-1.5-1.6 0-1.1.7-1.7 1.6-1.7.5 0 .9.2 1.3.5v2.1zm2.3 2.8c-.2.2-.5.3-.8.3-.3 0-.7-.2-.8-.6-.8.7-1.8 1-2.8 1-1.8 0-3-1.1-3-2.9 0-1.9 1.4-2.9 3.2-2.9.8 0 1.6.2 2.1.6V11c0-1.3-.8-1.9-2.1-1.9-.8 0-1.6.3-2.2.7l-.6-1.2C9.8 8.1 11 7.6 12.3 7.6c2.4 0 3.7 1.3 3.7 3.5v3.6c0 .8.2 1.2.6 1.2.2 0 .4-.1.6-.2l.6 1.1c-.3.3-.6.5-1 .5-.6 0-1-.3-1.2-.9z" fill="#FF9900"/>
+  <path d="M4 17.5c4.5 2.5 11.5 2.5 16 0 .5-.3.8 0 .5.4-2.2 2-7.5 3.6-11 3.6-3.8 0-5.8-1.5-6-3.5-.1-.4.2-.6.5-.5z" fill="#FF9900"/>
+</svg>
+</g>
+    <text x="602" y="20" class="tag-text" fill="#E0F2FE">AWS · learning</text>
+  </a>
+  <a xlink:href="https://azure.microsoft.com/" target="_blank" class="tech-pill">    <rect x="745" y="0" width="178" height="30" rx="7" fill="url(#learnGrad)" stroke="#38BDF8" stroke-width="1.2"/>
+    <g transform="translate(753, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M13.05 4.24l-5.7 10.42L2 16.5l8.6-13.8a1.2 1.2 0 012.05.54z" fill="#0078D4"/>
+  <path d="M13.05 4.24L7.35 14.66l6.9 4.34a1.2 1.2 0 001.76-1.05V5.29a1.2 1.2 0 00-2.96-1.05z" fill="#50E6FF"/>
+  <path d="M7.35 14.66l-5.35 1.84a1.2 1.2 0 00-.7 1.54l1.2 2.76a1.2 1.2 0 001.55.65l9.95-3.45-6.65-3.34z" fill="#0078D4"/>
+</svg>
+</g>
+    <text x="773" y="20" class="tag-text" fill="#E0F2FE">Azure · learning</text>
+  </a>
+</g>
+<!-- Row [ai &amp; local] -->
+<g transform="translate(0, 475)">
+  <text x="32" y="20" class="cat-text" fill="#3986FF">[ai &amp; local]</text>
+  <a xlink:href="https://github.com/KikeGonRam/RAG" target="_blank" class="tech-pill">    <rect x="215" y="0" width="178" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="5" fill="#38BDF8"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#CBD5E1">RAG Architecture</text>
+  </a>
+  <a xlink:href="https://ollama.com/" target="_blank" class="tech-pill">    <rect x="403" y="0" width="94" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(411, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="5" fill="#38BDF8"/>
+</svg>
+</g>
+    <text x="431" y="20" class="tag-text" fill="#CBD5E1">Ollama</text>
+  </a>
+  <a xlink:href="https://spark.apache.org/" target="_blank" class="tech-pill">    <rect x="507" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(515, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M11.9 2c-3.4 0-3.2 1.5-3.2 1.5l.04 1.55h3.26v.47H6.2S4 5.3 4 8.7c0 3.4 1.9 3.3 1.9 3.3h1.15v-1.6s-.06-1.9 1.9-1.9h3.25s1.84.03 1.84-1.8V4c0-1.8-2.14-2-2.14-2zm-1.8 1.15a.65.65 0 110 1.3.65.65 0 010-1.3z" fill="#3776AB"/>
+  <path d="M12.1 22c3.4 0 3.2-1.5 3.2-1.5l-.04-1.55h-3.26v-.47h5.8s2.2.22 2.2-3.18c0-3.4-1.9-3.3-1.9-3.3h-1.15v1.6s.06 1.9-1.9 1.9h-3.25s-1.84-.03-1.84 1.8V20c0 1.8 2.14 2 2.14 2zm1.8-1.15a.65.65 0 110-1.3.65.65 0 010 1.3z" fill="#FFD438"/>
+</svg>
+</g>
+    <text x="535" y="20" class="tag-text" fill="#CBD5E1">PySpark</text>
+  </a>
+</g>
+<!-- Row [quality &amp; tools] -->
+<g transform="translate(0, 543)">
+  <text x="32" y="20" class="cat-text" fill="#3986FF">[quality &amp; tools]</text>
+  <a xlink:href="https://phpunit.de/" target="_blank" class="tech-pill">    <rect x="215" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(223, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2l8 4.6v9.2L12 20.4l-8-4.6V6.6L12 2z" stroke="#FF2D20" stroke-width="1.8" fill="none"/>
+  <path d="M12 2v9.2l8-4.6M12 11.2l-8-4.6" stroke="#FF2D20" stroke-width="1.6"/>
+</svg>
+</g>
+    <text x="243" y="20" class="tag-text" fill="#CBD5E1">PHPUnit</text>
+  </a>
+  <a xlink:href="https://eslint.org/" target="_blank" class="tech-pill">    <rect x="327" y="0" width="94" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(335, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <rect x="2" y="2" width="20" height="20" rx="4" fill="#3178C6"/>
+  <path d="M6 10h6m-3 0v8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M17.5 11c-.5-.6-1.2-1-2-1-1.4 0-2.5.9-2.5 2.2 0 2.5 4 1.8 4 3.8 0 1.2-1 2-2.5 2-1 0-1.8-.4-2.5-1.2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
+</g>
+    <text x="355" y="20" class="tag-text" fill="#CBD5E1">ESLint</text>
+  </a>
+  <a xlink:href="https://www.postman.com/" target="_blank" class="tech-pill">    <rect x="431" y="0" width="102" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(439, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="5" fill="#38BDF8"/>
+</svg>
+</g>
+    <text x="459" y="20" class="tag-text" fill="#CBD5E1">Postman</text>
+  </a>
+  <a xlink:href="https://swagger.io/" target="_blank" class="tech-pill">    <rect x="543" y="0" width="186" height="30" rx="7" fill="#0E1626" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(551, 7) scale(0.66)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" fill="#009688"/>
+  <path d="M13 4l-5 8h4l-1 8 6-9h-4l1-7z" fill="#FFFFFF"/>
+</svg>
+</g>
+    <text x="571" y="20" class="tag-text" fill="#CBD5E1">Swagger / OpenAPI</text>
+  </a>
+</g>
+
+<!-- Separador y Footer -->
+<path d="M32 603h936" stroke="#1E293B" stroke-dasharray="4 4"/>
+<text x="32" y="664" class="comment-text"># Click en cada tecnología para consultar su documentación oficial · ⚡ Cloud &amp; Mobile activo</text>
+<text x="890" y="664" class="comment-text" fill="#38BDF8">[ 26 tools ]</text>
+</svg>

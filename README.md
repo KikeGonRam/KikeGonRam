@@ -10,21 +10,13 @@
 
 ![01 / Detrás del código. Soy Luis Enrique González Ramírez, desarrollador full-stack en Toluca, México. Construyo aplicaciones web, móviles, APIs y sistemas con IA local. T.S.U. en Desarrollo de Software Multiplataforma por la UTVT.](assets/about.svg)
 
-![02 / Proyectos con intención. Producto digital, inteligencia artificial local y seguridad.](assets/projects.svg)
+![02 / Proyectos con intención. UrbanBlade: frontend web frontend_Urbanblade, backend API barber y sitio urbanblade.com.mx. RAG local: Python, FastAPI, ChromaDB y Ollama. vulncore: escáner Linux con Rust, Go y consultas OSV/NVD.](assets/projects.svg)
 
-[![UrbanBlade: plataforma para barberías con frontend web frontend_Urbanblade y backend API barber. Visitar sitio web.](assets/urbanblade.svg)](https://urbanblade.com.mx/)
+**UrbanBlade:** [Sitio web ↗](https://urbanblade.com.mx/) · [Frontend](https://github.com/KikeGonRam/frontend_Urbanblade) · [Backend / API](https://github.com/KikeGonRam/barber)
 
-**[Visitar UrbanBlade ↗](https://urbanblade.com.mx/)** · [Backend / API](https://github.com/KikeGonRam/barber) · [Frontend web](https://github.com/KikeGonRam/frontend_Urbanblade)
+**Más código:** [RAG local](https://github.com/KikeGonRam/RAG) · [vulncore](https://github.com/KikeGonRam/vulncore) · [Todos mis repositorios](https://github.com/KikeGonRam?tab=repositories)
 
-[![RAG local: recuperación de información con ChromaDB y modelos mediante Ollama. Python y FastAPI. Ver repositorio.](assets/rag.svg)](https://github.com/KikeGonRam/RAG)
-
-[Ver código de RAG ↗](https://github.com/KikeGonRam/RAG)
-
-[![vulncore: escáner de vulnerabilidades para Linux con Rust y Go, consultas OSV/NVD y dashboard web. Ver repositorio.](assets/vulncore.svg)](https://github.com/KikeGonRam/vulncore)
-
-[Ver código de vulncore ↗](https://github.com/KikeGonRam/vulncore) · [Todos mis repositorios](https://github.com/KikeGonRam?tab=repositories)
-
-![03 / Mi caja de herramientas. Backend: Java, Spring Boot, Laravel, Python, FastAPI, Node.js. Frontend y móvil: Next.js, React, TypeScript, Tailwind CSS, React Native. Datos: MySQL, MongoDB, ChromaDB. Infraestructura: Docker, Git, GitHub Actions. IA: RAG, Ollama, PySpark. Calidad: PHPUnit, ESLint, Postman, Swagger.](assets/stack.svg)
+![03 / Mi caja de herramientas. Backend: Java, Spring Boot, Laravel, Python, FastAPI, Node.js. Móvil: Kotlin, Android SDK, React Native. Frontend: Next.js, React, TypeScript, Tailwind CSS. Datos: PostgreSQL, MySQL, MongoDB, ChromaDB. Cloud & Infra: Docker, Git, GitHub Actions, AWS y Azure (en aprendizaje). IA: RAG, Ollama, PySpark. Calidad: PHPUnit, ESLint, Postman, Swagger.](assets/stack.svg)
 
 [![04 / El siguiente proyecto. Disponible para freelance y colaboraciones. Conversemos sobre tu idea o sobre cómo mejorar tu sistema. Enviar correo.](assets/contact.svg)](mailto:kikeramirez160418@gmail.com)
 
