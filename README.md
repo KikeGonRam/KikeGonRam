@@ -8,47 +8,27 @@
   <a href="mailto:kikeramirez160418@gmail.com"><img src="https://img.shields.io/badge/HABLEMOS-101827?style=for-the-badge&amp;logo=gmail&amp;logoColor=3986FF" alt="Enviar correo" /></a>
 </p>
 
-## 01 / Detrás del código
+![01 / Detrás del código. Soy Luis Enrique González Ramírez, desarrollador full-stack en Toluca, México. Construyo aplicaciones web, móviles, APIs y sistemas con IA local. T.S.U. en Desarrollo de Software Multiplataforma por la UTVT.](assets/about.svg)
 
-Soy **Luis Enrique González Ramírez**, desarrollador de software en Toluca, México. Construyo aplicaciones full-stack, APIs y sistemas con inteligencia artificial local. Me gusta conectar una interfaz clara con un backend sólido y llevar el proyecto hasta su despliegue.
+![02 / Proyectos con intención. Producto digital, inteligencia artificial local y seguridad.](assets/projects.svg)
 
-T.S.U. en Desarrollo de Software Multiplataforma por la **UTVT**. Disponible para freelance y nuevos proyectos.
+[![UrbanBlade: plataforma para barberías con frontend web frontend_Urbanblade y backend API barber. Visitar sitio web.](assets/urbanblade.svg)](https://urbanblade.com.mx/)
 
-## 02 / Proyectos con intención
+**[Visitar UrbanBlade ↗](https://urbanblade.com.mx/)** · [Backend / API](https://github.com/KikeGonRam/barber) · [Frontend web](https://github.com/KikeGonRam/frontend_Urbanblade)
 
-### [UrbanBlade ↗](https://github.com/KikeGonRam/barber)
-Plataforma para la gestión de barberías con Laravel, MongoDB, Redis y Stripe.
+[![RAG local: recuperación de información con ChromaDB y modelos mediante Ollama. Python y FastAPI. Ver repositorio.](assets/rag.svg)](https://github.com/KikeGonRam/RAG)
 
-`Laravel` · `MongoDB` · `Redis` · `Stripe`
+[Ver código de RAG ↗](https://github.com/KikeGonRam/RAG)
 
-### [RAG local ↗](https://github.com/KikeGonRam/RAG)
-Pipeline de generación aumentada por recuperación con FastAPI, ChromaDB y modelos ejecutados localmente mediante Ollama.
+[![vulncore: escáner de vulnerabilidades para Linux con Rust y Go, consultas OSV/NVD y dashboard web. Ver repositorio.](assets/vulncore.svg)](https://github.com/KikeGonRam/vulncore)
 
-`Python` · `FastAPI` · `ChromaDB` · `Ollama`
+[Ver código de vulncore ↗](https://github.com/KikeGonRam/vulncore) · [Todos mis repositorios](https://github.com/KikeGonRam?tab=repositories)
 
-### [vulncore ↗](https://github.com/KikeGonRam/vulncore)
-Escáner de vulnerabilidades para servidores Linux: exploración asíncrona de puertos y consulta de vulnerabilidades mediante OSV/NVD, con dashboard web.
+![03 / Mi caja de herramientas. Backend: Java, Spring Boot, Laravel, Python, FastAPI, Node.js. Frontend y móvil: Next.js, React, TypeScript, Tailwind CSS, React Native. Datos: MySQL, MongoDB, ChromaDB. Infraestructura: Docker, Git, GitHub Actions. IA: RAG, Ollama, PySpark. Calidad: PHPUnit, ESLint, Postman, Swagger.](assets/stack.svg)
 
-`Rust` · `Go` · `Linux` · `Security`
+[![04 / El siguiente proyecto. Disponible para freelance y colaboraciones. Conversemos sobre tu idea o sobre cómo mejorar tu sistema. Enviar correo.](assets/contact.svg)](mailto:kikeramirez160418@gmail.com)
 
-**[Explorar más repositorios →](https://github.com/KikeGonRam?tab=repositories)**
-
-## 03 / Mi caja de herramientas
-
-| Área | Tecnologías |
-| :--- | :--- |
-| **Backend** | Java · Spring Boot · Laravel · Python · FastAPI · Node.js |
-| **Frontend y móvil** | Next.js · React · TypeScript · Tailwind CSS · React Native |
-| **Datos** | MySQL · MongoDB · ChromaDB |
-| **Infraestructura** | Docker · Git · GitHub Actions |
-| **IA y análisis** | RAG · Ollama · PySpark |
-| **Calidad** | PHPUnit · ESLint · Postman · Swagger |
-
-## 04 / El siguiente proyecto
-
-¿Tienes una idea, un sistema que necesita mejorar o un proyecto para colaborar?
-
-**[Escríbeme →](mailto:kikeramirez160418@gmail.com)** · [Portafolio](https://kikegonram.github.io) · [LinkedIn](https://www.linkedin.com/in/luisgonzalezramirez-dev)
+**[Hablemos de tu proyecto ↗](mailto:kikeramirez160418@gmail.com)** · [Portafolio](https://kikegonram.github.io) · [LinkedIn](https://www.linkedin.com/in/luisgonzalezramirez-dev)
 
 ---
 
