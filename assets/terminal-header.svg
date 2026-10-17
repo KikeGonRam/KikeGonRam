@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1769FF"/>
+      <stop offset="1" stop-color="#39d0d8"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="win"><rect x="40" y="40" width="720" height="340" rx="12"/></clipPath>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- scanline decor -->
+  <g opacity="0.06">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#39d0d8"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#39d0d8"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#39d0d8"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#39d0d8"/>
+  </g>
+
+  <!-- terminal window -->
+  <rect x="40" y="40" width="720" height="340" rx="12" fill="#0b0f14" stroke="#1f2937" stroke-width="1.5"/>
+  <rect x="40" y="40" width="720" height="36" rx="12" fill="#161d27"/>
+  <rect x="40" y="66" width="720" height="10" fill="#161d27"/>
+  <circle cx="64" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="86" cy="58" r="6" fill="#febc2e"/>
+  <circle cx="108" cy="58" r="6" fill="#28c840"/>
+  <text x="400" y="62" text-anchor="middle" fill="#4b5563" font-size="13">kikegonram@github: ~</text>
+
+  <g clip-path="url(#win)" font-size="16">
+
+    <!-- L1: prompt whoami -->
+    <text x="64" y="120" fill="#39d0d8" opacity="0">
+      <set attributeName="opacity" to="1" begin="0.5s"/>
+      $ whoami
+    </text>
+    <!-- response -->
+    <text x="64" y="148" fill="#e6edf3" font-weight="bold" opacity="0">
+      <set attributeName="opacity" to="1" begin="1.6s"/>
+      luis-enrique · kikegonram
+    </text>
+    <text x="64" y="172" fill="#8b949e" opacity="0">
+      <set attributeName="opacity" to="1" begin="2.1s"/>
+      dev fullstack — web · móvil · IA local
+    </text>
+
+    <!-- L2 -->
+    <text x="64" y="216" fill="#39d0d8" opacity="0">
+      <set attributeName="opacity" to="1" begin="3.0s"/>
+      $ cat filosofia.txt
+    </text>
+    <text x="64" y="244" fill="url(#neon)" font-weight="bold" filter="url(#glow)" opacity="0">
+      <set attributeName="opacity" to="1" begin="4.1s"/>
+      ideas claras. código con carácter.
+    </text>
+
+    <!-- L3 -->
+    <text x="64" y="288" fill="#39d0d8" opacity="0">
+      <set attributeName="opacity" to="1" begin="5.0s"/>
+      $ ls ~/proyectos --destacados
+    </text>
+    <text x="80" y="316" fill="#1769FF" opacity="0">
+      <set attributeName="opacity" to="1" begin="6.2s"/>
+      urbanblade/   rag-local/   vulncore/
+    </text>
+
+    <!-- L4 -->
+    <text x="64" y="356" fill="#39d0d8" opacity="0">
+      <set attributeName="opacity" to="1" begin="7.2s"/>
+      $ ./hablemos --ahora
+    </text>
+
+    <!-- cursor -->
+    <rect x="215" y="343" width="9" height="18" fill="#39d0d8">
+      <animate attributeName="x" values="215;64;64" keyTimes="0;0.55;1" dur="7.2s" begin="0s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" begin="7.4s" repeatCount="indefinite"/>
+      <set attributeName="opacity" to="0" begin="0s"/>
+      <set attributeName="opacity" to="1" begin="0.4s"/>
+    </rect>
+  </g>
+
+  <!-- bottom neon line -->
+  <rect x="40" y="396" width="0" height="2" fill="url(#neon)">
+    <animate attributeName="width" from="0" to="720" dur="7.5s" fill="freeze"/>
+  </rect>
+</svg>
