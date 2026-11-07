@@ -1,28 +1,23 @@
-<p align="center">
-  <img src="assets/header.svg" width="100%" alt="Luis Enrique — KikeGonRam. Ideas claras. Código con carácter. Web, móvil e IA local." />
-</p>
+# Luis Enrique González Ramírez
 
-<p align="center">
-  <a href="https://kikegonram.github.io"><img src="https://img.shields.io/badge/PORTAFOLIO-1769FF?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Ver portafolio" /></a>
-  <a href="https://www.linkedin.com/in/luisgonzalezramirez-dev"><img src="https://img.shields.io/badge/LINKEDIN-101827?style=for-the-badge" alt="Conectar en LinkedIn" /></a>
-  <a href="mailto:kikeramirez160418@gmail.com"><img src="https://img.shields.io/badge/HABLEMOS-101827?style=for-the-badge&amp;logo=gmail&amp;logoColor=3986FF" alt="Enviar correo" /></a>
-</p>
+**Desarrollador de software** · Toluca, México
 
-<p align="center">
-  <img src="assets/terminal.svg" width="100%" alt="01 / detrás del código — kike@dev: ~. Con la mascota Byte." />
-</p>
+Desarrollo plataformas web y APIs en producción. Hoy trabajo en una plataforma de pagos institucional y en el portal corporativo de una empresa (autenticación, control de accesos y despliegue). Fuera del trabajo construyo proyectos propios de punta a punta. Disponible para nuevas oportunidades.
 
-![02 / Mi caja de herramientas. Backend: Java, Spring Boot, Laravel, Python, FastAPI, Node.js. Móvil: Kotlin, Android SDK, React Native. Frontend: Next.js, React, TypeScript, Tailwind CSS. Datos: PostgreSQL, MySQL, MongoDB, ChromaDB. Cloud & Infra: Docker, Git, GitHub Actions, AWS y Azure (en aprendizaje). IA: RAG, Ollama, PySpark. Calidad: PHPUnit, ESLint, Postman, Swagger.](assets/stack.svg)
+[Portafolio](https://kikegonram.github.io) · [CV](https://kikegonram.github.io/cv.html) · [LinkedIn](https://www.linkedin.com/in/luisgonzalezramirez-dev) · [kikeramirez160418@gmail.com](mailto:kikeramirez160418@gmail.com)
 
-[![03 / El siguiente proyecto. Disponible para freelance y colaboraciones. Conversemos sobre tu idea o sobre cómo mejorar tu sistema. Enviar correo.](assets/contact.svg)](mailto:kikeramirez160418@gmail.com)
+## Proyectos destacados
 
-**[Hablemos de tu proyecto ↗](mailto:kikeramirez160418@gmail.com)** · [Portafolio](https://kikegonram.github.io) · [LinkedIn](https://www.linkedin.com/in/luisgonzalezramirez-dev)
+- **[UrbanBlade](https://github.com/KikeGonRam/barber)**: plataforma para barberías con reservas, agenda, pagos e inventario. API en Laravel, MongoDB, Redis y Stripe; [web](https://github.com/KikeGonRam/frontend_Urbanblade) en Nuxt, Vue y TypeScript; [analítica](https://github.com/KikeGonRam/spark) con PySpark.
+- **[DBMonitor](https://github.com/KikeGonRam/dbmonitor)**: monitoreo en tiempo real de MySQL y MongoDB. React, Node.js, FastAPI y Docker.
+- **[RAG](https://github.com/KikeGonRam/RAG)**: preguntas sobre tus documentos con modelos locales, sin APIs externas. FastAPI, ChromaDB y Ollama.
+- **[VulnCore](https://github.com/KikeGonRam/vulncore)**: escáner de vulnerabilidades con cruce de CVE. Rust y Go.
+- **[Evaluación docente](https://github.com/KikeGonRam/evaluacion-docente-api)**: API REST con Spring Boot, MySQL y OpenAPI.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KikeGonRam&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1769FF&icon_color=39d0d8&text_color=e6edf3" height="165" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KikeGonRam&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1769FF&text_color=e6edf3" height="165" alt="lenguajes" />
-</p>
+## Tecnologías
 
----
-
-<p align="center"><sub>KIKEGONRAM · IDEAS CLARAS. CÓDIGO CON CARÁCTER.</sub></p>
+- **Lenguajes:** Java, TypeScript, JavaScript, PHP, Python, SQL
+- **Backend:** Spring Boot, Laravel, Node.js, FastAPI
+- **Frontend:** Next.js, React, Nuxt, Vue, Tailwind CSS
+- **Datos:** MySQL, MongoDB, Redis, PySpark, ChromaDB
+- **Calidad y operación:** Git, GitHub Actions, Docker, PHPUnit, ESLint, SonarCloud
