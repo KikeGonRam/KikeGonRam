@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-labelledby="t d">
+<title id="t">Certificaciones</title><desc id="d">Generative AI Foundations (AWS, oct 2026); CCNA: Introduction to Networks (CISCO, ene 2024); CCNA: Switching, Routing and Wireless Essentials (CISCO, may 2024); Introducción a la Ciberseguridad (CISCO, jun 2024); Fundamentos de Python 1 (CISCO, jul 2024); Conceptos básicos de hardware (CISCO, jun 2024); Linux Essentials (NDG · CISCO, jul 2024); Career Preparation Workshop (CISCO, ago 2024)</desc>
+<style>.c { animation: up .6s ease both; } @keyframes up { from { opacity: 0; transform: translateY(6px); } } @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<rect x="1" y="1" width="998" height="398" rx="16" fill="#080B12" stroke="#263248"/>
+<text x="32" y="46" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="15" fill="#91A0B8">$ ls ~/certificaciones --verificadas</text>
+<text x="32" y="80" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="26" font-weight="800" fill="#F5F7FC">Certificaciones</text>
+<g class="c" style="animation-delay:0.0s"><rect x="28" y="96" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="28" y="96" width="4" height="118" rx="2" fill="#FF9900"/>
+<text x="46" y="122" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#FF9900">AWS</text>
+<text x="246" y="122" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">oct 2026</text>
+<text x="46" y="150" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Generative AI</text>
+<text x="46" y="171" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Foundations</text>
+<text x="46" y="200" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">AWS Academy Graduate · 12 h</text></g>
+<g class="c" style="animation-delay:0.07s"><rect x="272" y="96" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="272" y="96" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="290" y="122" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="490" y="122" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">ene 2024</text>
+<text x="290" y="150" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">CCNA: Introduction to</text>
+<text x="290" y="171" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Networks</text>
+<text x="290" y="200" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">CCNAv7 · insignia</text></g>
+<g class="c" style="animation-delay:0.14s"><rect x="516" y="96" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="516" y="96" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="534" y="122" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="734" y="122" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">may 2024</text>
+<text x="534" y="150" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">CCNA: Switching, Routing</text>
+<text x="534" y="171" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">and Wireless Essentials</text>
+<text x="534" y="200" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">CCNAv7 · insignia</text></g>
+<g class="c" style="animation-delay:0.21000000000000002s"><rect x="760" y="96" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="760" y="96" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="778" y="122" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="978" y="122" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">jun 2024</text>
+<text x="778" y="150" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Introducción a la</text>
+<text x="778" y="171" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Ciberseguridad</text>
+<text x="778" y="200" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">insignia</text></g>
+<g class="c" style="animation-delay:0.28s"><rect x="28" y="226" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="28" y="226" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="46" y="252" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="246" y="252" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">jul 2024</text>
+<text x="46" y="280" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Fundamentos de Python 1</text>
+<text x="46" y="330" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">Python Essentials · insignia</text></g>
+<g class="c" style="animation-delay:0.35000000000000003s"><rect x="272" y="226" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="272" y="226" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="290" y="252" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="490" y="252" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">jun 2024</text>
+<text x="290" y="280" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Conceptos básicos de</text>
+<text x="290" y="301" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">hardware</text>
+<text x="290" y="330" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">Hardware Basics · insignia</text></g>
+<g class="c" style="animation-delay:0.42000000000000004s"><rect x="516" y="226" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="516" y="226" width="4" height="118" rx="2" fill="#22C55E"/>
+<text x="534" y="252" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#22C55E">NDG · CISCO</text>
+<text x="734" y="252" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">jul 2024</text>
+<text x="534" y="280" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Linux Essentials</text>
+<text x="534" y="330" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">NDG Linux · certificado</text></g>
+<g class="c" style="animation-delay:0.49000000000000005s"><rect x="760" y="226" width="232" height="118" rx="12" fill="#0E1626" stroke="#263248"/>
+<rect x="760" y="226" width="4" height="118" rx="2" fill="#049FD9"/>
+<text x="778" y="252" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" letter-spacing="2" fill="#049FD9">CISCO</text>
+<text x="978" y="252" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">ago 2024</text>
+<text x="778" y="280" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Career Preparation</text>
+<text x="778" y="301" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="16" font-weight="700" fill="#F5F7FC">Workshop</text>
+<text x="778" y="330" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#91A0B8">insignia</text></g>
+<text x="32" y="380" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#91A0B8">También: Get Connected, Linux Unhatched y Getting Started with Cisco Packet Tracer (Cisco Networking Academy, 2023–2024).</text>
+</svg>

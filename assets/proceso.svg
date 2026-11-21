@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="290" viewBox="0 0 1000 290" role="img" aria-labelledby="t d">
+<title id="t">De la idea a producción</title><desc id="d">1. contrato: API primero (OpenAPI · roles); 2. rama + PR: cambios pequeños (Git · revisión); 3. pruebas: unitarias y E2E (PHPUnit · Vitest · Playwright); 4. seguridad: antes de fusionar (CodeQL · auditoría); 5. imagen: build reproducible (Docker · ECR); 6. deploy: infra como código (ECS Fargate · Terraform)</desc>
+<style>.flow { animation: flow 6s ease-in-out infinite; } @keyframes flow { 0% { stroke-dashoffset: 100; } 60%,100% { stroke-dashoffset: 0; } } .n { animation: pop 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; } @keyframes pop { 0%,5% { opacity: .35; } 12%,100% { opacity: 1; } } @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<defs><linearGradient id="gp" x1="0" x2="1"><stop offset="0" stop-color="#1769FF"/><stop offset="1" stop-color="#28C840"/></linearGradient></defs><rect x="1" y="1" width="998" height="288" rx="16" fill="#080B12" stroke="#263248"/>
+<text x="32" y="46" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="15" fill="#91A0B8">$ cat ~/como-trabajo.md</text>
+<text x="32" y="80" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="26" font-weight="800" fill="#F5F7FC">De la idea a producción</text>
+<path d="M80 150H920" stroke="#263248" stroke-width="4" stroke-linecap="round"/>
+<path class="flow" d="M80 150H920" stroke="url(#gp)" stroke-width="4" stroke-linecap="round" pathLength="100" stroke-dasharray="100 100"/>
+<g class="n" style="animation-delay:0.0s"><circle cx="80.0" cy="150" r="10" fill="#05070B" stroke="#3986FF" stroke-width="3"/><circle cx="80.0" cy="150" r="4" fill="#3986FF"/></g>
+<text x="80.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">01</text>
+<text x="80.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">contrato</text>
+<text x="80.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">API primero</text>
+<text x="80.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">OpenAPI · roles</text>
+<g class="n" style="animation-delay:0.45s"><circle cx="248.0" cy="150" r="10" fill="#05070B" stroke="#3986FF" stroke-width="3"/><circle cx="248.0" cy="150" r="4" fill="#3986FF"/></g>
+<text x="248.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">02</text>
+<text x="248.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">rama + PR</text>
+<text x="248.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">cambios pequeños</text>
+<text x="248.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">Git · revisión</text>
+<g class="n" style="animation-delay:0.9s"><circle cx="416.0" cy="150" r="10" fill="#05070B" stroke="#3986FF" stroke-width="3"/><circle cx="416.0" cy="150" r="4" fill="#3986FF"/></g>
+<text x="416.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">03</text>
+<text x="416.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">pruebas</text>
+<text x="416.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">unitarias y E2E</text>
+<text x="416.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">PHPUnit · Vitest · Playwright</text>
+<g class="n" style="animation-delay:1.35s"><circle cx="584.0" cy="150" r="10" fill="#05070B" stroke="#3986FF" stroke-width="3"/><circle cx="584.0" cy="150" r="4" fill="#3986FF"/></g>
+<text x="584.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">04</text>
+<text x="584.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">seguridad</text>
+<text x="584.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">antes de fusionar</text>
+<text x="584.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">CodeQL · auditoría</text>
+<g class="n" style="animation-delay:1.8s"><circle cx="752.0" cy="150" r="10" fill="#05070B" stroke="#3986FF" stroke-width="3"/><circle cx="752.0" cy="150" r="4" fill="#3986FF"/></g>
+<text x="752.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">05</text>
+<text x="752.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">imagen</text>
+<text x="752.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">build reproducible</text>
+<text x="752.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">Docker · ECR</text>
+<g class="n" style="animation-delay:2.25s"><circle cx="920.0" cy="150" r="13" fill="#05070B" stroke="#28C840" stroke-width="3"/><circle cx="920.0" cy="150" r="6" fill="#28C840"/></g>
+<text x="920.0" y="120" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">06</text>
+<text x="920.0" y="192" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="17" font-weight="700" fill="#F5F7FC">deploy</text>
+<text x="920.0" y="214" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="13.5" fill="#C5D2E6">infra como código</text>
+<text x="920.0" y="236" text-anchor="middle" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="11.5" fill="#38BDF8">ECS Fargate · Terraform</text>
+</svg>
