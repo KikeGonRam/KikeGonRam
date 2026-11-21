@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="230" viewBox="0 0 490 230" role="img" aria-labelledby="t d">
+<title id="t">VulnCore</title><desc id="d">Escaneo asíncrono de puertos y cruce con CVE (OSV, NVD) para servidores Linux. Stack: Go, Rust, Seguridad.</desc>
+<style> @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<rect x="1" y="1" width="488" height="228" rx="14" fill="#080B12" stroke="#263248"/>
+<path d="M15 1h460q14 0 14 14v25H1V15Q1 1 15 1" fill="#0E1626"/>
+<path d="M1 40h488" stroke="#263248"/>
+<circle cx="22" cy="21" r="5" fill="#FF6058"/><circle cx="40" cy="21" r="5" fill="#FEBC2E"/><circle cx="58" cy="21" r="5" fill="#28C840"/>
+<text x="78" y="26" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="13" fill="#91A0B8">~/vulncore</text>
+<text x="472" y="26" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#FF6B6B">personal</text>
+<text x="22" y="80" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="24" font-weight="800" fill="#F5F7FC">VulnCore</text>
+<text x="22" y="110" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="15" fill="#C5D2E6">Escaneo asíncrono de puertos y cruce con</text>
+<text x="22" y="132" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="15" fill="#C5D2E6">CVE (OSV, NVD) para servidores Linux.</text>
+<rect x="22" y="168" width="31.2" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="30" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Go</text>
+<rect x="59.2" y="168" width="46.4" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="67.2" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Rust</text>
+<rect x="111.6" y="168" width="84.39999999999999" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="119.6" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Seguridad</text>
+<text x="22" y="216" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">seguridad · panel web</text>
+<rect x="1" y="226" width="488" height="3" fill="#FF6B6B" opacity=".8"/>
+</svg>

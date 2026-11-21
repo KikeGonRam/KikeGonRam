@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="230" viewBox="0 0 490 230" role="img" aria-labelledby="t d">
+<title id="t">Evaluación docente</title><desc id="d">API REST de docentes, cuestionarios y evaluaciones, con frontend en Next.js. Stack: Java, Spring Boot, MySQL, Next.js.</desc>
+<style> @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<rect x="1" y="1" width="488" height="228" rx="14" fill="#080B12" stroke="#263248"/>
+<path d="M15 1h460q14 0 14 14v25H1V15Q1 1 15 1" fill="#0E1626"/>
+<path d="M1 40h488" stroke="#263248"/>
+<circle cx="22" cy="21" r="5" fill="#FF6058"/><circle cx="40" cy="21" r="5" fill="#FEBC2E"/><circle cx="58" cy="21" r="5" fill="#28C840"/>
+<text x="78" y="26" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="13" fill="#91A0B8">~/evaluacion-docente</text>
+<text x="472" y="26" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#F59E0B">escuela · equipo</text>
+<text x="22" y="80" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="24" font-weight="800" fill="#F5F7FC">Evaluación docente</text>
+<text x="22" y="110" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="15" fill="#C5D2E6">API REST de docentes, cuestionarios y</text>
+<text x="22" y="132" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="15" fill="#C5D2E6">evaluaciones, con frontend en Next.js.</text>
+<rect x="22" y="168" width="46.4" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="30" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Java</text>
+<rect x="74.4" y="168" width="99.6" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="82.4" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Spring Boot</text>
+<rect x="180.0" y="168" width="54.0" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="188.0" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">MySQL</text>
+<rect x="240.0" y="168" width="69.19999999999999" height="24" rx="12" fill="#0E1626" stroke="#263248"/><text x="248.0" y="185" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12.5" fill="#C5D2E6">Next.js</text>
+<text x="22" y="216" font-family="Consolas, SFMono-Regular, Menlo, Courier New, monospace" font-size="12" fill="#91A0B8">OpenAPI · demo en Vercel</text>
+<rect x="1" y="226" width="488" height="3" fill="#F59E0B" opacity=".8"/>
+</svg>
